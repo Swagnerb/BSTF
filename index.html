@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/style.css">
-  <title>Document</title>
-</head>
-<body>
-  
-  <script src="/scripts/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="main">
+      <div class="controller"></div>
+      <div class="application">
+        <form action="postForm()">
+          <h3 id="clientName">Hickory Grove</h3>
+          <fieldset class="contact-info">
+            <legend>Contact Info</legend>
+            <table>
+              <colgroup>
+                <col class="col1">
+                <col class="col2">
+              </colgroup>
+              <tbody class="client-info-body">
+                <tr>
+                  <th><label for="fName">First Name</label></th>
+                  <td><input type="text" name="fName" id="fName" value="Brendan"></td>
+                </tr>
+                <tr>
+                  <th><label for="lName">Last Name</label></th>
+                  <td><input type="text" name="lName" id="lName" value="Wagner"></td>
+                </tr>
+                <tr>
+                  <th><label for="workNumber">Work Number</label></th>
+                  <td><input type="tel" name="workNumber" id="workNumber" value="6074838447"></td>
+                </tr>
+                <tr>
+                  <th><label for="mobileNumber">Mobile Number</label></th>
+                  <td><input type="mobileNumber" name="mobileNumber" id="fName" value="6075224258"></td>
+                </tr>
+                <tr>
+                  <th><label for="email">Email</label></th>
+                  <td><input type="email" name="email" id="email" value="wagnermb99@gmail.com"></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/functions.js"></script>
+  </body>
 </html>
