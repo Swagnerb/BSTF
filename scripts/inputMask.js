@@ -28,3 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       el.addEventListener("blur", () => el.value === pattern && (el.value=""));
   }
 });
+
+/* <label>MAC Address:
+    <input placeholder="XX:XX:XX:XX:XX:XX" data-slots="X" data-accept="[\dA-H]">
+</label><br></br> */
